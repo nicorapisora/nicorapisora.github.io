@@ -91,7 +91,6 @@ body {
     font-size: 2em;
     font-weight: 500;
     color: #333;
-    margin-bottom: 0.5em;
     letter-spacing: -0.025em;
     line-height: 1em;
 }
@@ -102,6 +101,7 @@ body {
 
 .content {
     position: relative;
+    margin-top: 1em;
 }
 
 #profile {
@@ -134,7 +134,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
 }
 
 .project > .header {
@@ -149,7 +148,7 @@ body {
 }
 
 .project + .project {
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 .project img,
@@ -206,6 +205,10 @@ a {
     border-color: darkblue;
     color: darkblue;
     cursor: pointer;
+}
+
+#eos {
+    margin-bottom: 1em;
 }
 
 ::selection {
