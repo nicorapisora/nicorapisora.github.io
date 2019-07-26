@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    font-family: "DM Sans";
+    display: flex;
+    justify-content: center;
+}
+
+#illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#sideBar {
+    position: fixed;
+    top: 2.5em;
+    left: 2em;
+    display: none;
+    margin-top: 1em;
+}
+
+#sideBar > .name {
+    line-height: 1em;
+    margin-bottom: 3em;
+}
+
+#contentFrame {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentFrame > div {
+    margin-left: calc(1em + 5vw);
+    margin-right: calc(1em + 5vw);
+}
+
+#contentFrame > div:last-child {
+    margin-bottom: 2.5em;
+}
+
+#contentFrame > div + div {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+
+#intro {
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.name {
+    font-weight: 500;
+}
+
+#introText {
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 1;
+    font-size: 2.5em;
+    line-height: 1em;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: black;
+}
+
+#introText > div + div {
+    margin-top: 0.3em;
+}
+
+#intro__emphasis1 {
+    color: darkblue;
+}
+
+#intro__emphasis2 {
+    color: darkblue;
+}
+
+.header {
+    font-size: 2em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.025em;
+    line-height: 1em;
+}
+
+.subheader {
+    font-weight: 500;
+}
+
+.content {
+    position: relative;
+}
+
+#profile {
+    width: 5em;
+    height: 5em;
+    float: left;
+    margin-right: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.skillItem {
+    display: flex;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    align-items: flex-start;
+}
+
+.skillItem > img {
+    width: 3em;
+    height: 3em;
+}
+
+.skillItem > span {
+    flex: 1;
+    margin-left: 0.5em;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.project > .header {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #444;
+    display: block;
+}
+
+.project > * + * {
+    margin-top: 1em;
+}
+
+.project + .project {
+    margin-top: 2em;
+}
+
+.project img,
+iframe {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+iframe {
+    height: 13em;
+}
+
+.gallery {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    border-bottom: none;
+    padding: 0.5em 0 2em 0;
+}
+
+.gallery img {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.slick-dots {
+    bottom: -0.25em;
+}
+
+.slick-dots li button::before {
+    font-size: 10px;
+}
+
+#btnTecsped {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 1em 0;
+    transition: all 0.2s;
+    font-weight: 500;
+    background: whitesmoke;
+    border: 2px solid black;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#btnTecsped:hover {
+    border-color: darkblue;
+    color: darkblue;
+    cursor: pointer;
+}
+
+::selection {
+    background: yellow;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #indicator {
+        background: cyan !important;
+    }
+
+    #introText {
+        font-size: 3em;
+    }
+
+    #contentFrame {
+        width: 80%;
+        align-items: center;
+    }
+
+    #about,
+    #skills,
+    #portfolio,
+    #contact {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #sideBar {
+        display: block;
+        width: 10%;
+    }
+
+    #btnMenu {
+        display: none;
+    }
+
+    #intro {
+        min-height: unset;
+    }
+
+    #introText {
+        text-align: left;
+        font-size: 2.85em;
+    }
+
+    body {
+        display: block;
+    }
+
+    #contentFrame {
+        width: 70%;
+        margin-top: 2em;
+        align-items: flex-start;
+        position: absolute;
+        left: 25%;
+    }
+
+    #contentFrame > div {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #contentFrame {
+        width: 60%;
+        left: 30%;
+    }
+
+    #introText {
+        text-align: left;
+        font-size: 3.25em;
+    }
+
+    #sideBar {
+        width: auto;
+        left: 2.5em;
+        margin-left: 16px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #contentFrame {
+        width: 45%;
+    }
+}
