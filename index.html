@@ -2,161 +2,270 @@
 
 <head>
     <title>Nico Rapisora</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <div id="sideBar">
-        <div class="name">Nico Rapisora</div>
-    </div>
-    <div id="contentFrame">
-        <div id="intro">
-            <div id="introText">
-                <div>
-                    Hi! I'm <span class="name">Nico</span>, <br>instructional designer<br>in Metro Manila.
-                </div>
-                <div>
-                    My goal: improving <span id="intro__emphasis1">learning &amp; performance</span> through <span id="intro__emphasis2">design &amp; technology.</span>
-                </div>
-            </div>
-        </div>
-        <div id="about">
-            <div class="header">About</div>
-            <div class="content">
-                <img src="img/profile.png" id="profile" />
-                I am a graduate of De La Salle University - Manila with a Computer Science degree and several units of Professional Education. My interests are technology, educational psychology, and art. Often, I design graphics for small and medium businesses. Currently, I live in Metro Manila, looking for opportunities to put my skills to use.
-            </div>
-        </div>
-        <div id="skills">
-            <div class="header">Skills</div>
-            <div class="content">Through my degree and my interests, I have gained skills relating to information technology, educational psychology, and multimedia development. I can:
-                <div class="skillItem">
-                    <img src="img/skillIcon-02.svg" />
-                    <span>design solutions to instructional and human performance problems, backed with learning theories and best practices,</span>
-                </div>
-                <div class="skillItem">
-                    <img src="img/skillIcon-03.svg" />
-                    <span>create media objects (for both instructional or non-instructional purposes),</span>
-                </div>
-                <div class="skillItem">
-                    <img src="img/skillIcon-04.svg" />
-                    <span>develop digital and non-digital learning and instructional materials,</span>
-                </div>
-                <div class="skillItem">
-                    <img src="img/skillIcon-05.svg" />
-                    <span>and evaluate the efficiency and effectiveness of instructional strategies.</span>
-                </div>
-            </div>
-        </div>
-        <div id="portfolio">
-            <div class="header">Portfolio</div>
-            <div class="content">
-                <div class="project">
-                    <div class="header">
-                        Teachware for the St. Luke's Medical Center Phlebotomy Training Program
-                    </div>
-                    <div class="textContent">
-                        This was submitted as an undergraduate thesis and was developed in cooperation with subject matter experts from St. Luke's Medical Center - Global City.
-                    </div>
-                    <iframe src="https://www.youtube.com/embed/RupmA-GlRME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="textContent">
-                        In this project, I was involved in the analysis of the stakeholders' learning and instructional needs, the design of a tool to solve the identified needs, and the development of instructional media (text, images, videos, and interactivities).
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="header">
-                        Manila Zoo Animal Guide Mobile App
-                    </div>
-                    <div class="textContent">
-                        This prototype was submitted as a final project in a Mobile Learning and Development course. In this project, I took part in the analysis of the learner and environment as well as the development of the Android app.
-                    </div>
-                    <div id="gallery_mzag" class="gallery">
-                        <img src="img/mzag-01.png">
-                        <img src="img/mzag-02.png">
-                        <img src="img/mzag-03.png">
-                        <img src="img/mzag-04.png">
-                        <img src="img/mzag-05.png">
-                        <img src="img/mzag-06.png">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="header">
-                        Assistive and Supportive Technology Roadmap for a Special Education Institution
-                    </div>
-                    <div class="textContent">
-                        This document was submitted as a final project in a Technology for Special Education course. This project involved an onsite observation of instruction in a SPED school in Makati.
-                    </div>
-                    <a href="https://drive.google.com/open?id=1GmsksUzBu6qrsc_HIbNXSF88AU8YS0VY">
-                        <div id="btnTecsped">Read an excerpt</div>
-                    </a>
-                </div>
-                <div class="project">
-                    <div class="header">
-                        Graphic Design
-                    </div>
-                    <div class="subheader">
-                        Logos
-                    </div>
-                    <div class="textContent">
-                        I design logos and other branding collaterals for small and medium businesses and organizations.
-                    </div>
-                    <div id="gallery_logos" class="gallery">
-                        <img src="img/logo_gangs.png">
-                        <img src="img/logo_lnl.png">
-                        <img src="img/logo_cluething.png">
-                        <img src="img/logo_ffc.png">
-                        <img src="img/logo_fr.png">
-                        <img src="img/logo_idph.png">
-                        <img src="img/logo_ts.png">
-                    </div>
-                    <div class="subheader">
-                        The Essence of Switzerland
-                    </div>
-                    <div class="textContent">
-                        I was awarded as the Under 18 Winner in the Create and Innovate Swatch Art Competition for creating this illustration showcasing Swiss culture.
-                    </div>
-                    <img id="eos" src="img/eos.png">
-                    <div class="subheader">
-                        The Horizon 2014
-                    </div>
-                    <div class="textContent">
-                        I was the Editor-in-Chief and Layout Artist in The Horizon 2014, the Integrated Montessori Center yearbook.
-                    </div>
-                    <div id="gallery_yearbook" class="gallery">
-                        <img src="img/horcover.png">
-                        <img src="img/hor1.png">
-                        <img src="img/hor2.png">
-                        <img src="img/hor3.png">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="header">
-                        This Website
-                    </div>
-                    <div class="textContent">
-                        I also organized, designed and coded this website with HTML5, CSS, and Javascript.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact">
-            <div class="header">Contact</div>
-            <div class="content">
-                <a href="https://www.linkedin.com/in/nicorapisora/">My LinkedIn Profile</a>
-            </div>
+    <!-- <div class="upbutton">
+            <span class="material-icons">keyboard_arrow_up</span>
+        </div> -->
+    <div class="navbar">
+        <div class="navbarcontent">
+            <span class="name">Nico Rapisora</span>
+            <div><a href="#about">About</a></div>
+            <div><a href="#work">Work</a></div>
+            <div><a href="#tools">Tools & Tech</a></div>
+            <div><a href="#contact">Contact</a></div>
         </div>
     </div>
+    <div class="megawrapper">
+        <div class="introwrapper">
+            <div class="float">
+                <div class="hero">Hello! 👋</div>
+                <div class="introtext">I'm <span class="name">Nico Rapisora</span>,<br>instructional designer &<br>eLearning dev.</div>
+                <img class="profile" src="profile.png">
+            </div>
+            <div class="mobilenavbar">
+                <div class="navbarcontent">
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#work">Work</a></div>
+                    <div><a href="#tools">Tools & Tech</a></div>
+                    <div><a href="#contact">Contact</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutwrapper">
+            <a id="about">
+                <h1><span class="emoji">🙂</span>About</h1>
+            </a>
+            <p>I have been an ID and eLearning dev since 2019 after having graduated from De La Salle University -
+                Manila with a Computer Science degree.
+                I also am a Licensed Professional Teacher for Secondary Education. Helping people learn gives me
+                great fulfillment.
+            </p>
+        </div>
+        <div class="contentwrapper">
+            <a id="work">
+                <h1><span class="emoji">👔</span>Work</h1>
+            </a>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <div class="project">
+                <h2>Wildlife Law Enforcement eLearning</h2>
+                <h3>Tasks performed</h3>
+                <span class="task">Content writing</span><span class="task">SME consultations</span><span
+                    class="task">eLearning authoring</span><span class="task">LMS management</span><span
+                    class="task">Voiceover and editing</span>
+                <p>In this project by the Asian Development Bank, I was part of a team tasked to create a series of eLearning modules for
+                    the country's wildlife law enforcers.</p>
+                <div class="credit">
+                    <div class="emphasis">Screenshots from the modules</div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="wle1.png">
+                        <img src="wle2.png">
+                        <img src="wle5.png">
+                        <img src="wle3.png">
+                        <img src="wle4.png">
+                    </div>
+                    <div class="buttons"></div>
+                </div>
+                <div class="credit">
+                    <div class="emphasis">Philippine Biodiversity video</div>Research, scriptwriting and voice by me.
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jpv_jO5WAKY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p>I also have recorded over 4 hours of voiceover for the modules.</p>
+                <div class="credit">
+                    <div class="emphasis">Voiceover excerpts</div>Research, scriptwriting and voice by me.
+                </div>
+                <audio controls="controls" src="Prosecution.wav">
+                    Your browser does not support the HTML5 Audio element.
+                </audio>
+                <audio controls="controls" src="Judicial Affidavit Rule.wav">
+                    Your browser does not support the HTML5 Audio element.
+                </audio>
+            </div>
 
-    <script type="text/javascript" src="script.js"></script>
+            <div class="project">
+                <h2>Teachware for St. Luke's Medical Center Phlebotomy Training</h2>
+                <h3>Tasks performed</h3>
+                <span class="task">Web development</span><span class="task">Content writing</span><span
+                    class="task">Graphic design</span><span class="task">SME consultations</span><span
+                    class="task">Video production</span><span class="task">Voiceover and editing</span>
+                <p>This was submitted as an undergraduate thesis and was developed in
+                    cooperation with subject matter experts of the St. Luke's Medical Center Institute of Pathology.
+                </p>
+                <div class="credit">
+                    <div class="emphasis">Screenshots from the modules</div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="phlebo1.png">
+                        <img src="phlebo2.png">
+                        <img src="phlebo3.png">
+                        <img src="phlebo4.png">
+                        <img src="phlebo5.png">
+                        <img src="phlebo6.png">
+                        <img src="phlebo7.png">
+                    </div>
+                    <div class="buttons"></div>
+                </div>
+                <div class="credit">
+                    <div class="emphasis">Phlebo Summary Video</div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z5f9M-MJmzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="project">
+                <h2>Instructional Designers of the Philippines</h2>
+                <h3>Tasks performed</h3>
+                <span class="task">Event organizing</span>
+                <span class="task">Facilitation</span>
+                <span class="task">Graphic design</span>
+                <p>IDPH is a passion project by me and some of my friends. I have helped organize and facilitate three Meetups
+                    where IDs were able to chat with fellow IDs about their practice.</p>
+                <div class="credit">
+                    <div class="emphasis">IDPH Meetup Dec 2019, Feb 2020</div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="meetup1.jpg">
+                        <img src="meetup4.jpg">
+                        <img src="meetup2.jpg">
+                    </div>
+                    <div class="buttons"></div>
+                </div>
+                <p>I am also in charge of the project's graphic design which appear on the project's online accounts.</p>
+                <div class="credit">
+                    <div class="emphasis">Graphics for IDPH social media</div>
+                </div>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="meetup3.jpg">
+                        <img src="idph1.png">
+                        <img src="idph2.png">
+                        <img src="idph3.png">
+                    </div>
+                    <div class="buttons"></div>
+                </div>
+                <div class="credit">
+                    <div class="emphasis">What is Instructional Design?</div>
+                    Research, scriptwriting, voice, and video by me
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ubsx7NAmR1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="project">
+                <h2>Graphic Design</h2>
+                <h3>Tasks performed</h3>
+                <span class="task">Client consultations</span>
+                <span class="task">Graphic design</span>
+                <p>I have designed logos and other branding collaterals for small and medium businesses and organizations.</p>
+                <div class="gallery">
+                    <div class="images">
+                        <img src="logo_cluething.png">
+                        <img src="logo_ffc.png">
+                        <img src="logo_fr.png">
+                        <img src="logo_gangs.png">
+                        <img src="logo_idph.png">
+                        <img src="logo_lnl.png">
+                        <img src="logo_ts.png">
+                    </div>
+                    <div class="buttons"></div>
+                </div>
+                <p>I have also submitted entries to local digital arts competitions.</p>
+                <div class="gallery">
+                    <div class="images long">
+                        <img src="hashtag.png">
+                        <img src="eos.png">
+                    </div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>This website</h2>
+                <h3>Tasks performed</h3>
+                <span class="task">Web development</span>
+                <span class="task">Graphic design</span>
+                <p>I developed this website from scratch with HTML5, CSS and JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="toolswrapper">
+            <a id="tools">
+                <h1><span class="emoji">🧰</span>Tools & Tech</h1>
+            </a>
+            <h2>eLearning Authoring</h2>
+            <ul>
+                <li>
+                    <span>Articulate Storyline</span>
+                </li>
+                <li>
+                    <span>Microsoft Word</span>
+                </li>
+                <li>
+                    <span>Microsoft PowerPoint</span>
+                </li>
+                <li>
+                    <span>Google Docs</span>
+                </li>
+                <li>
+                    <span>Google Slides</span>
+                </li>
+            </ul>
+            <h2>Media Production</h2>
+            <ul>
+                <li>
+                    <span>Adobe Illustrator</span>
+                </li>
+                <li>
+                    <span>Adobe Photoshop</span>
+                </li>
+                <li>
+                    <span>Adobe Premiere</span>
+                </li>
+                <li>
+                    <span>Adobe Audition</span>
+                </li>
+                <li>
+                    <span>Adobe InDesign</span>
+                </li>
+            </ul>
+            <h2>Web Technologies</h2>
+            <ul>
+                <li>
+                    <span>HTML5</span>
+                </li>
+                <li>
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <span>Firebase</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contactwrapper">
+            <a id="contact">
+                <h1><span class="emoji">🌐</span>Contact</h1>
+            </a>
+            <a href="https://linkedin.com/in/nicorapisora"><p>LinkedIn</p></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
