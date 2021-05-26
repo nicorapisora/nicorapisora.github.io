@@ -80,6 +80,8 @@ body {
     border-radius: 50%;
     align-self: center;
     animation: fadeIn 1s linear forwards;
+    background-size: cover;
+    background-image: url(profile.png);
 }
 
 .navbar {
@@ -132,7 +134,7 @@ body {
 .toolswrapper,
 .contactwrapper {
     opacity: 0;
-    animation: fadeIn 0.5s linear 0.5s forwards;
+    animation: fadeIn 0.5s linear 1s forwards;
 }
 
 @keyframes fadeIn {
@@ -231,6 +233,11 @@ audio {
     background: whitesmoke;
 }
 
+.contactwrapper a {
+    text-decoration: none;
+    color: royalblue;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -284,10 +291,29 @@ ul li {
     display: block;
 }
 
-.gallery .buttons {
-    width: 100%;
+.gallery .controls {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gallery .buttons {
+    display: flex;
+    margin-right: 1em;
+}
+
+.gallery .toggle {
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.gallery .toggle span {
+    display: none;
+}
+
+.gallery .toggle span.active {
+    display: block;
 }
 
 .gallery .button {
@@ -380,3 +406,8 @@ ul li {
         font-size: 1.25em;
     }
  } 
+
+ html {
+    visibility: visible;
+    opacity: 1;
+}

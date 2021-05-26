@@ -1,3 +1,5 @@
+//Rush work -- don't judge.
+
 function Gallery(galleryDOM) {
     this.init = function() {
         this.imageswrapper = galleryDOM.querySelector(".images");
@@ -20,11 +22,35 @@ function Gallery(galleryDOM) {
         this.buttons.forEach((button, index) => {
             button.addEventListener("click", () => {
                 this.setActiveImage(index);
+                clearInterval(this.interval);
+                this.interval = setInterval(() => {
+                    if(!this.isPaused) {
+                        this.nextImage();
+                    }
+                }, 5000);
             });
         });
 
-        setInterval(() => {
-            this.nextImage();
+        this.toggle = galleryDOM.querySelector(".toggle");
+        this.pause = this.toggle.querySelector(".pause");
+        this.play = this.toggle.querySelector(".play");
+
+        this.pause.addEventListener("click", () => {
+            this.isPaused = true;
+            this.play.classList.add("active");
+            this.pause.classList.remove("active");
+        });
+
+        this.play.addEventListener("click", () => {
+            this.isPaused = false;
+            this.play.classList.remove("active");
+            this.pause.classList.add("active");
+        });
+
+        this.interval = setInterval(() => {
+            if(!this.isPaused) {
+                this.nextImage();
+            }
         }, 5000);
     }
     this.nextImage = function() {
